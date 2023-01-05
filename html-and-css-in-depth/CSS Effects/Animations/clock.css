@@ -1,0 +1,17 @@
+.clock{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-top: 100px;
+    border: 5px solid navy;
+}
+
+.hand{
+    height: 100px;
+    width: 10px;
+    border: 2px solid navy;
+}

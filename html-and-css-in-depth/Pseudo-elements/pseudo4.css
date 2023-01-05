@@ -1,0 +1,46 @@
+
+/* You can use first-letter to change the color of just the first letter of each of the three points in the example text. */
+
+li::first-letter {
+
+    color: coral;
+
+    font-size: 1.3em;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+}
+
+/* First-line will change the complete first line of each of the bullet points to light sea green. */
+ul {
+    list-style-type: none;
+}
+
+li::first-line {
+    color: lightseagreen;
+    text-decoration: underline;
+    line-height: 1;
+}
+
+/* Selection is another useful pseudo-element. For example,
+you may use it when you are taking notes on your device because it allows you to highlight specific text. The effect of it becomes obvious only after the user selects content. On web pages today,
+you will typically see inverted colors from white-black to black-white when selecting a portion of text. */
+
+li::selection {
+    color: brown;
+    background-color: antiquewhite;
+    line-height: 1;
+}
+
+/* Markers are typically used to add style elements to a list,
+for instance,
+to color bullet points. For example,
+you can enhance the user experience when you use a marker in the following way. */
+
+li::marker {
+    color: cornflowerblue;
+    content: '<> ';
+    font-size: 1.1em;
+}

@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color:green;
+    text-align: center;
+    padding: 2em;
+}
+main {
+    background-color:greenyellow;
+    text-align: center;
+    padding: 2em;
+}
+footer {
+    background-color:blue;
+    text-align: center;
+    padding: 2em;
+}

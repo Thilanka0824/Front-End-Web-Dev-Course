@@ -1,0 +1,38 @@
+body {
+
+    padding: 30px;
+}
+
+
+
+.box {
+
+    background-color: lightcoral;
+
+    width: 50px;
+
+    height: 50px;
+
+    animation: myAnimation 3s infinite ease-in;
+
+}
+
+
+
+@keyframes myAnimation {
+    /* box width stretches */
+    from {
+        width: 50px;
+
+    }
+    /* extra/last step */
+        50% {
+            background-color: aquamarine;
+            height: 20px;
+        }
+
+    to {
+        width: 100px;
+
+    }
+}

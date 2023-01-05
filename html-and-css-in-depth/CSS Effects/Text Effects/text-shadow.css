@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+h2{
+   text-shadow: 0 0 30px green, 0 0 5px white; 
+}
+
+/* Change to transform */
+.a {
+    margin: 30px;
+    border: 1px solid violet;
+    transform: skewX(20deg);
+    transition: 5s;
+}
+
+.b {
+    margin: 100px;
+    border: 1px solid violet;
+    transform: rotate(200deg);
+    transition: 5s;
+}
+
+.box{
+    display: grid;
+    width: 240px;
+    height: 240;
+    
+}
