@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.promo {
+  border: 2px solid black;
+}
+
+button {
+  border-radius: 6px;
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      /* box-shadow: 5px 2px 2px white; */
+      margin: 1rem;
+      padding: 0.75rem;
+}
+
+input {
+  font-size: xx-large;
+  border: 3px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+input:focus {
+  font-size: xx-large;
+    border: 3px solid black;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+input:hover {
+  font-size: xx-large;
+    border: 3px solid greenyellow;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
