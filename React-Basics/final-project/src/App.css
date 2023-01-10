@@ -1,0 +1,52 @@
+* {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  
+}
+
+.App {
+  border: 2px solid black;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px lightblue
+}
+
+input,
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border-radius: 0.5rem;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  background-color: rgb(242, 253, 254);
+
+}
+
+button {
+  border: 1px solid gray;
+  background: whitesmoke;
+  margin-right: 5px;
+}
+button:hover {
+  border: 1px solid whitesmoke;
+  background: black;
+  color: whitesmoke;
+  margin-right: 5px;
+}
+
+
+
+button:nth-last-child(2),
+button:nth-last-child(1) {
+  background: tomato;
+  color: white;
+}
+button:nth-last-child(2):hover,
+button:nth-last-child(1):hover {
+  background: rgb(69, 65, 64);
+  color: white;
+}
