@@ -19,6 +19,9 @@ const NavBar = () => {
       <Link style={{ margin: "30px", textDecoration: "none" }} to="fetchpage">
         FetchPage
       </Link>
+      <Link style={{ margin: "30px", textDecoration: "none" }} to="reducerpage">
+        ReducerPage
+      </Link>
     </div>
   );
 };

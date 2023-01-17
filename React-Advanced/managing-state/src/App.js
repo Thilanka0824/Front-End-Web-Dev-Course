@@ -7,6 +7,7 @@ import FormPage from "./Pages/FormPage";
 import GiftCardPage from "./Pages/GiftCardPage";
 import HooksPage from "./Pages/HooksPage";
 import FetchPage from "./Pages/FetchPage";
+import ReducerPage from "./Pages/ReducerPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
         {
           path: "/fetchpage",
           element: <FetchPage/>
+        },
+        {
+          path: "/reducerpage",
+          element: <ReducerPage/>
         }
       ],
     },
