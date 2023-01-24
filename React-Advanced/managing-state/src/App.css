@@ -2,12 +2,84 @@
   text-align: center;
 }
 
+.global-layout {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  /* fixed height for navbar and remaining space for the rest of the layout */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  /* fixed width for sidebar and remaining space for the rest of the layout */
+  grid-template-rows: 1fr;
+}
+
+/* This will make sure the sidebar and the main content take up the full height of the layout */
+.grid-container>* {
+  height: 100%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    /* stack sidebar and main content on top of each other */
+  }
+}
+
+/* Define the grid container */
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* fixed width of 150px */
+  width: 100%;
+  /* container takes up full width */
+  grid-gap: 1rem;
+  justify-content: center;
+  /* center the items horizontally */
+  padding: 2rem;
+}
+
+/* Style the items within the grid container */
+.nav-item {
+  /* Add your styles here */
+}
+
+.sidebar {
+  display: grid;
+  /* margin-top: 30px; */
+  padding-top: 3rem;
+  grid-template-rows: repeat(6, auto);
+  /* 6 rows */
+  row-gap: 3rem;
+  /* add some space between rows */
+  justify-content: center;
+  /* center the items horizontally */
+  align-items: center;
+  /* center the items vertically */
+  background-color: yellow;
+}
+
+nav {
+  background-color: greenyellow;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   color: white;
   background-color: black;
   margin: 10px;
+  min-height: 2.5rem;
+  max-width: 3rem;
+  min-width: 3rem;
+  max-width: 10rem;
   padding: 12px;
   border-radius: 6px;
+
   /* box-shadow: 0px 0px 5px 5px red; */
   /* box-shadow: 0 8px 8px -4px lightblue; */
   /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
@@ -19,37 +91,21 @@ button:hover {
   background-color: white;
   color: black;
 }
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#profile-pic {
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .nav-container {
+    grid-template-columns: 1fr; /* stack items on top of each other */
   }
 }
 
-main {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+  
+}

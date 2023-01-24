@@ -1,17 +1,20 @@
-import React from 'react'
+import React from "react";
+import FetchUser from "../Components/FetchUser";
+import FetchUserDotThen from "../Components/FetchUserDotThen";
 
 const FetchPage = () => {
   return (
     <div>
-        <h1>
-           NOTES IN VS CODE 
-        </h1>
+      <h1>NOTES IN VS CODE</h1>
+      <br></br>
+      <hr></hr>
+      <FetchUserDotThen/>
+      <FetchUser />
     </div>
-  )
-}
+  );
+};
 
-export default FetchPage
-
+export default FetchPage;
 
 /*
 Data fetching using hooks

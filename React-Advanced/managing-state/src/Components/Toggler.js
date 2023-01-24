@@ -1,17 +1,19 @@
 import React from "react";
+import reducer from "../Hooks/reducer";
+
 
 const Toggler = () => {
-  const [toggle, setToggle] = React.useState(false);
+  const [state, dispatch] = React.useReducer(reducer, { toggle: false})
 
   const clickHandler = () => {
-    setToggle(!toggle);
+    dispatch({type:"set_toggle"})
   };
 
   React.useEffect(() => {
-    document.title = toggle
+    document.title = state.toggle
       ? "Welcome to Little Lemon"
       : "Using the useEffect hook";
-  }, [toggle]);
+  }, [state.toggle]);
 
   return (
     <div>
@@ -39,7 +41,7 @@ const Toggler = () => {
       <div>
         <h1>Using the useEffect hook</h1>
         <button onClick={clickHandler}>Toggle message</button>
-        {toggle && <h2> Welcome to Little Lemon</h2>}
+        {state.toggle && <h2> Welcome to Little Lemon</h2>}
       </div>
     </div>
   );

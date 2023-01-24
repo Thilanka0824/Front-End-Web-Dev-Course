@@ -8,6 +8,11 @@ import GiftCardPage from "./Pages/GiftCardPage";
 import HooksPage from "./Pages/HooksPage";
 import FetchPage from "./Pages/FetchPage";
 import ReducerPage from "./Pages/ReducerPage";
+import CustomHooksPage from "./Pages/CustomHooksPage";
+import UseRefHookPage from "./Pages/UseRefHookPage";
+import ChildrenPropPage from "./Pages/ChildrenPropPage";
+import { cloneElement } from "react";
+import CloneElementPage from "./Pages/CloneElementPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,15 +35,31 @@ function App() {
         },
         {
           path: "/hookspage",
-          element: <HooksPage/>
+          element: <HooksPage />,
+        },
+        {
+          path: "/userefhookpage",
+          element: <UseRefHookPage />,
+        },
+        {
+          path: "/hookspage/custom",
+          element: <CustomHooksPage />,
         },
         {
           path: "/fetchpage",
-          element: <FetchPage/>
+          element: <FetchPage />,
         },
         {
           path: "/reducerpage",
-          element: <ReducerPage/>
+          element: <ReducerPage />,
+        },
+        {
+          path: "/childrenproppage",
+          element: <ChildrenPropPage />,
+        },
+        {
+          path: "/cloneelement",
+          element: <CloneElementPage/>
         }
       ],
     },
@@ -47,7 +68,6 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-      <div></div>
     </div>
   );
 }

@@ -1,8 +1,7 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
 import { Outlet } from "react-router-dom";
-import SideBar from "../Components/SideBar";
-// import Footer from "../Components/Footer";
+import NavBar from "../Components/NavBar.js"
+import SideBar from "../Components/SideBar.js";
 
 const GlobalLayout = () => {
   return (
@@ -12,7 +11,6 @@ const GlobalLayout = () => {
         <SideBar />
         <Outlet />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
